@@ -17,7 +17,7 @@ export const FetchReceptiError = (err) => {
 export const FetchRecepti = () => {
     return dispatch => {
         axios.get("https://api.spoonacular.com/recipes/search?query=yogurt&apiKey=c0351e3b8c8547b683bfd9609f08011d")
-        .then(res => dispatch(FetchReceptiStart(res.data)))
+        .then(res => dispatch(FetchReceptiStart(res.data.results)))
         .catch(err =>dispatch(FetchReceptiError(err)))
     }
 }

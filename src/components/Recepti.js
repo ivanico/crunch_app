@@ -45,9 +45,9 @@ export class Recepti extends React.Component {
           {this.props.recipes.length > 0 ?
           <ul>
             
-              {this.props.recipes.results.map(recipe =>{
+              {this.props.recipes.map(recipe =>{
                 return(
-                  <li key={recipe.id}>{recipe.results.title}</li>
+                  <li key={recipe.id}>{recipe.title}</li>
                 )
               })}
             
