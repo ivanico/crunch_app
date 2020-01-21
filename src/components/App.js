@@ -3,6 +3,7 @@ import { Recepti } from './Recepti';
 import { connect } from 'react-redux';
 import { FetchRecepti } from "../actions/ReceptiActions";
 import { Switch, Route, Link} from "react-router-dom";
+import { Recept } from './Recept';
 
 export class App extends React.Component{
 
@@ -13,7 +14,12 @@ export class App extends React.Component{
   render(){
     return(
       <div id="app">
-        <Recepti />
+        <Link to="/" >HOME</Link>
+        <Switch>
+          <Route exact path="/" component={Recepti}/>
+          <Route exact path="/recepti/:id" component={Recept}/>
+        </Switch>
+       
         <h2>app</h2>
       </div>
     )

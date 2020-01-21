@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import { Recept } from "./Recept";
 
 export class Recepti extends React.Component {
   render() {
@@ -47,13 +48,12 @@ export class Recepti extends React.Component {
             
               {this.props.recipes.map(recipe =>{
                 return(
-                  <li key={recipe.id}>{recipe.title}</li>
+                  <li key={recipe.id}><Link to={"recepti/" + recipe.id}><img src={recipe.image} /><hr/>{recipe.title}</Link></li>
                 )
               })}
             
           </ul> : <h2>Loading Recipes</h2>
           }
-          
         </div>
       </div>
     );
