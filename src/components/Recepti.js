@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { Recept } from "./Recept";
+
 
 export class Recepti extends React.Component {
   render() {
@@ -37,9 +37,6 @@ export class Recepti extends React.Component {
           <div>
             <h3>5</h3>
           </div>
-          <div>
-            <h3>6</h3>
-          </div>
         </Slider>
         </div>
         <div id="recepti-mid">
@@ -48,7 +45,7 @@ export class Recepti extends React.Component {
             
               {this.props.recipes.map(recipe =>{
                 return(
-                  <li key={recipe.id}><Link to={"recepti/" + recipe.id}><img src={recipe.image} /><hr/>{recipe.title}</Link></li>
+                  <li key={recipe.id}><Link to={"recepti/" + recipe.id}><img src={"https://spoonacular.com/recipeImages/"+recipe.image} /><hr/>{recipe.title}</Link><br/><h3>Total prep time: {recipe.readyInMinutes} min <br/>Servings: {recipe.servings}</h3></li>
                 )
               })}
             

@@ -17,7 +17,7 @@ export class App extends React.Component{
         <Link to="/" >HOME</Link>
         <Switch>
           <Route exact path="/" component={Recepti}/>
-          <Route exact path="/recepti/:id" component={Recept}/>
+          <Route path="/recepti/:id" component={Recept}/>
         </Switch>
        
         <h2>app</h2>

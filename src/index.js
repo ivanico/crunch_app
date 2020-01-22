@@ -11,7 +11,7 @@ import store from "./store";
 ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
-            <Route exact path="/" component={ App } />
+            <Route path="/" component={ App } />
         </BrowserRouter>
     </Provider>,
     document.getElementById('root'));
