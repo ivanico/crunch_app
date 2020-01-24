@@ -14,7 +14,13 @@ export class App extends React.Component{
   render(){
     return(
       <div id="app">
+        <div id="header">
+          <div id="container">
+            <div id="main-menu">
         <Link to="/" >HOME</Link>
+           </div>
+          </div>
+        </div>
         <Switch>
           <Route exact path="/" component={Recepti}/>
           <Route path="/recepti/:id" component={Recept}/>

@@ -22,30 +22,24 @@ export class Recepti extends React.Component {
         <div id="slider">
         <h2>Pause On Hover</h2>
         <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
+          {this.props.recipes.length > 0 ?
+        <div>
+          {this.props.recipes.slice(0,5).map(recipe =>{
+            return(
+              <div key={recipe.id}><img class="sliki" src={"https://spoonacular.com/recipeImages/"+recipe.image} /></div>
+            )
+          })}
+        </div> : <h3>Loading Slider</h3>  
+        }
         </Slider>
         </div>
         <div id="recepti-mid">
           {this.props.recipes.length > 0 ?
-          <ul>
+          <ul id="recepti-list">
             
               {this.props.recipes.map(recipe =>{
                 return(
-                  <li key={recipe.id}><Link to={"recepti/" + recipe.id}><img src={"https://spoonacular.com/recipeImages/"+recipe.image} /><hr/>{recipe.title}</Link><br/><h3>Total prep time: {recipe.readyInMinutes} min <br/>Servings: {recipe.servings}</h3></li>
+                  <li class="recepti-li" key={recipe.id}><Link id="a-link" to={"recepti/" + recipe.id}><img class="sliki" src={"https://spoonacular.com/recipeImages/"+recipe.image} />{recipe.title}<hr/></Link><h3>Total prep time: {recipe.readyInMinutes} min Servings: {recipe.servings}</h3></li>
                 )
               })}
             

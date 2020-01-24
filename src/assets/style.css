@@ -1,0 +1,76 @@
+html {
+background-color: white;
+}
+
+#app {
+  
+    max-width: 100vw;
+    width: 70%;
+    margin:auto;
+    background-color: #F5F5F5;
+}
+#header  {
+    top:0;
+    display:block;
+    position: relative;
+    height: 10vh;
+    color:white;
+    background-color: white;
+    box-shadow: 0px 7px 6px #8787871A;
+}
+#container {
+    height:100%;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100% !important; 
+}
+
+#main-menu {
+    text-align: left;
+    width: 50%;
+    margin:0 25%;
+}
+
+#recepti-list {
+    grid-column-gap: 3%;
+    grid-row-gap:2%;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    max-width: 100vw;
+    width:90%;
+    margin:5% auto !important;
+    background: none;
+    list-style: none;
+    padding-inline-start: 0 !important;
+}
+
+#recepti-list li {
+    margin: auto;
+    max-width: 300px;
+    background: white;
+    border-radius:5%;
+    text-align: center;
+}
+
+#a-link {
+    height:50px !important;
+    font-size:22px;
+    text-decoration: none;
+    color:#494843;
+}
+
+.recepti-li h3 {
+    padding:0 15%;
+    text-align: left;
+}
+
+.sliki {
+    border-radius:5%;
+    width:300px;
+    height:350px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    margin-bottom: 6%;
+}
+
