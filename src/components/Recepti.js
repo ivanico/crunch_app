@@ -21,17 +21,16 @@ export class Recepti extends React.Component {
       <div id="recepti-top">
         <div id="slider">
         <h2>Pause On Hover</h2>
+        {this.props.recipes.length > 0 ?
         <Slider {...settings}>
-          {this.props.recipes.length > 0 ?
-        <div>
-          {this.props.recipes.slice(0,5).map(recipe =>{
+          {this.props.recipes.slice(5,10).map(recipe =>{
             return(
-              <div key={recipe.id}><img class="sliki" src={"https://spoonacular.com/recipeImages/"+recipe.image} /></div>
+            <div key={recipe.id}><Link id="a-link" to={"recepti/" + recipe.id}><img class="sliki" src={"https://spoonacular.com/recipeImages/"+recipe.image} />{recipe.title}</Link></div>
             )
           })}
-        </div> : <h3>Loading Slider</h3>  
+        </Slider> : <h3>Loading Slider</h3>  
         }
-        </Slider>
+        
         </div>
         <div id="recepti-mid">
           {this.props.recipes.length > 0 ?

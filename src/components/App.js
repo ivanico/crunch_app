@@ -26,7 +26,7 @@ export class App extends React.Component{
           <Route path="/recepti/:id" component={Recept}/>
         </Switch>
        
-        <h2>app</h2>
+        {/* <h2>app</h2> */}
       </div>
     )
   }
