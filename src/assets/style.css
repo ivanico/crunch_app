@@ -1,5 +1,5 @@
 html {
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
     background-color: white;
 }
 
@@ -10,6 +10,11 @@ html {
     margin:auto;
     background-color: #F5F5F5;
 }
+
+#recepti-mid {
+    height:2200px;
+}
+
 #header  {
     top:0;
     display:block;
@@ -20,6 +25,7 @@ html {
     box-shadow: 0px 7px 6px #8787871A;
 }
 #container {
+    padding:8px 0 0;
     height:100%;
     text-align: center;
     position: relative;
@@ -31,6 +37,43 @@ html {
     text-align: left;
     width: 50%;
     margin:0 25%;
+}
+
+#slider h2 {
+    margin-left:35px;
+    color:#999999;
+}
+
+.slick-list {
+    height:530px;
+}
+
+.slick-slide,.slick-slide.slick-cloned,.slick-slide.slick-active {
+    border-radius: 5%;
+    background-color: white;
+    width:400px !important;
+    height:436px !important;
+    margin:0 20px;
+    padding: 26px 0px;
+}
+
+slick-slide:first-child div {
+    padding:25px 0;
+}
+
+.slick-slide img {
+    margin:0 auto;
+}
+
+.slick-slide h2 {
+    width:350px;
+    height:45px;
+    margin:0 auto 0;
+    padding:18px 0;
+    font-size: 19px;
+    color:#494843;
+    text-align: center;
+    border-bottom: 2px solid #d8d8d8;
 }
 
 #recepti-list {
@@ -48,30 +91,173 @@ html {
 
 #recepti-list li {
     margin: auto;
-    max-width: 300px;
+    max-width: 360px;
     background: white;
     border-radius:5%;
     text-align: center;
 }
 
+
+
 #a-link {
-    height:50px !important;
     font-size:22px;
     text-decoration: none;
     color:#494843;
 }
 
+/* .fa5f {
+    width:50px;
+    height:auto;
+} */
+
+.titleh {
+    border-bottom:2px solid #d8d8d8;
+    line-height: 22px;
+    height:60px;
+    font-size:19px;
+    font-weight: 600;
+    color:black;
+}
+
+#review-row {
+    width:350px;
+    margin:auto;
+}
+
+#review-row p {
+    font-size: 15px;
+    color:#9B9B9B;
+}
+
+.recepti-li {
+    box-shadow: 0px 7px 6px #8787871A;
+}
+
 .recepti-li h3 {
+    content:"/f007";
     padding:0 15%;
     text-align: left;
+    color:black;
 }
 
 .sliki {
     border-radius:5%;
-    width:300px;
-    height:350px;
+    width:335px;
+    height:315px;
     background-repeat: no-repeat;
     object-fit: cover;
     margin-bottom: 6%;
 }
 
+#recepti-slika {
+    height:420px;
+    width:620px;
+    margin:5% auto 0 auto;
+}
+
+#recepti-slika img {
+    box-shadow: 0px 7px 6px rgb(184, 184, 184);
+    width:620px;
+    height:100%;
+    border-radius:25px;
+}
+
+#descripton {
+    background-color: white;
+    width: 70%;
+    margin-left: 15%;
+    border-radius:15px;
+    box-shadow: 0px 7px 6px #8787871A;
+}
+
+
+#ingredients {
+    background-color: white;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 15px;
+    box-shadow: 0px 7px 6px #8787871A;
+}
+
+.fa-bookmark {
+    float:right;
+}
+
+.description {
+    font-size:20px;
+    font-weight: 600;
+    color:#494843;
+    padding:20px 40px;
+}
+
+#descripton h1 {
+    color:#494843;
+    font-size:30px;
+}
+
+.fa-star, .fa-clock, .fa-bookmark {
+    margin-right:15px;
+    font-size:24px;
+    color:#FD6721;
+}
+
+.fa-utensils {
+    margin-top:10px;
+    margin-right:15px;
+    font-size:24px;
+    color:#FD6721;
+}
+
+#ing-table {
+    padding:20px 40px;
+    width:80%;
+}
+
+#ing-table th {
+    color:#FD6721;
+    width:10px;
+    text-align: left;
+}
+
+.ing-amount {
+    color:#666666;
+    width:300px !important;
+    margin-left:20px;
+}
+
+
+.how-to {
+    width:240px;
+    margin:25px auto 25px 15%;
+    font-size:30px;
+    color:#999999;
+    font-weight: extra-bold;
+}
+
+
+#steps {
+    background-color: white;
+    width: 70%;
+    margin:0 0 5% 15%;
+    border-radius: 15px;
+    box-shadow: 0px 7px 6px #8787871A;
+}
+
+recept-list-ingredients
+
+#recept-list-ingredients {
+    list-style: none;
+}
+
+#recept-list-steps {
+    box-shadow: 0px 7px 6px #8787871A;
+    padding:20px;
+    list-style: none;
+
+}
+
+.step  {
+    color: #FD6721;
+    font-size: 24px;
+    font-weight: 700 !important;
+}
