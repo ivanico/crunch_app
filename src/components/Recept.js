@@ -19,7 +19,7 @@ export class Recept extends React.Component {
     }
     
     FetchRecipeInfo = () => {
-        axios.get("https://api.spoonacular.com/recipes/"+ this.props.match.params.id +"/information?includeNutrition=false&apiKey=592e189ab4204c25ba8eed20aea0d155")
+        axios.get("https://api.spoonacular.com/recipes/"+ this.props.match.params.id +"/information?includeNutrition=false&apiKey=9bd87c0f8846411eb8007ed51e147ede")
             .then(res => this.setState({
                  recipeInfos: res.data.extendedIngredients,
                  recipeImage: res.data.image,
