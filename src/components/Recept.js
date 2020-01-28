@@ -39,7 +39,7 @@ export class Recept extends React.Component {
     render() {
         return(
             this.state.recipeInfos.length > 0 ?
-            <div>
+            <div id="recept">
                 <div id="recepti-slika">
                 <img  src={this.state.recipeImage} />
                 </div>
