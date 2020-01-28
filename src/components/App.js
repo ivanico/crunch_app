@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { FetchRecepti } from "../actions/ReceptiActions";
 import { Switch, Route, Link} from "react-router-dom";
 import { Recept } from './Recept';
-
+import Capture from "../assets/Capture.PNG"
 
 export class App extends React.Component{
 
@@ -18,7 +18,7 @@ export class App extends React.Component{
         <div id="header">
           <div id="container">
             <div id="main-menu">
-        <Link to="/" >HOME</Link>
+        <Link to="/" ><img src={Capture}/></Link>
            </div>
           </div>
         </div>
